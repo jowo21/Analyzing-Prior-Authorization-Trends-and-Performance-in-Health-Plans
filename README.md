@@ -56,7 +56,8 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 
 - The overall average approval rate is 68%
 - Year over year approval ratings have not deviated much between 2020 and 2023
-| **Year** | **Average Approval Rate** |
+- 
+| Year | Average Approval Rate |
 | --- | --- |
 | 2020 | 67% |
 | 2021 | 70% |
@@ -68,7 +69,7 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 - 46% of the Services had 100% approval rates
 - The following depicts the average response times of approvals
 
-  | Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
+| Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
 | --- | --- | --- |
 | 78.89 | 8.4 | 21.59 |
 
@@ -77,7 +78,7 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 ### Other Insights
 
 - The overall average of approval rate is 68%  By Service Category most are within range of that average
-  | Service_Category | Total_requests | Avg_approval_rate |
+| Service_Category | Total_requests | Avg_approval_rate |
 | --- | --- | --- |
 | Outpatient Med-Surg | 1409804 | 65% |
 | Outpatient MH-SUD | 199548 | 82% |
@@ -89,6 +90,7 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 
 
 43% of the carriers were slower than the average standard response time as well as the expedited response time while 29% were slower than the extenuating average time
+
 | Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
 | --- | --- | --- |
 | 78.89 | 8.4 | 21.59 |
