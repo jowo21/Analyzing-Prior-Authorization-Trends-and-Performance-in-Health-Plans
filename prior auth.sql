@@ -1,11 +1,5 @@
 
-USE prior_auth
-;
 
-
-SELECT *
-FROM hp_pa_table
-;
 
 #Service Categories with highest PA approval rates
 SELECT Service_category, SUM(Number_of_requests_per_code) AS total_requests, ROUND(AVG(Approval_rate),2) AS avg_approval_rate
@@ -127,9 +121,9 @@ SELECT ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_average,
  FROM hp_pa_table
  ;
  
+#Percent of Services that had 100 % approval rates
+SELECT 
+(SELECT COUNT(Description_of_service) FROM hp_pa_table WHERE Approval_rate = 1) / COUNT(*) * 100 AS 100_percent_approval_rates
+FROM hp_pa_table
+;
 
- #Percent of Services that had 100 % approval rates
-  SELECT 
-  (SELECT COUNT(Description_of_service) FROM hp_pa_table WHERE Approval_rate = 1) / COUNT(*) * 100 AS 100_percent_approval_rates
- FROM hp_pa_table
-  ;
