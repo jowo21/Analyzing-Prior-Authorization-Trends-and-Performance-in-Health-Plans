@@ -55,7 +55,7 @@ The dataset consists of 20 columns and 7151 rows
 | Drug_brand_names | string |
 
 
-The SQL code that was generated for analysis can be found <a href=”https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sql”>here</a>
+The SQL code that was generated for analysis can be found [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sql)
 
 
 
@@ -64,7 +64,7 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 
 - The overall average approval rate is 68%
 - Year over year approval ratings have not deviated much between 2020 and 2023
-- 
+
 | Year | Average Approval Rate |
 | --- | --- |
 | 2020 | 67% |
@@ -153,4 +153,6 @@ This dashboard will also allow the user to track all metrics per medication or p
 
 
 
-The full Power BI Dashboard can be found <a href=”[https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sq](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix”>here</a>
+The full Power BI Dashboard can be found [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sq](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix)
+
+
