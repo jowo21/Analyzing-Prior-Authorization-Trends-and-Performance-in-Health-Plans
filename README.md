@@ -85,6 +85,7 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 ### Other Insights
 
 - The overall average of approval rate is 68%  By Service Category most are within range of that average
+
 | Service_Category | Total_requests | Avg_approval_rate |
 | --- | --- | --- |
 | Outpatient Med-Surg | 1409804 | 65% |
