@@ -49,6 +49,8 @@ The dataset consists of 20 columns and 7151 rows
 
 The SQL code that was generated for analysis can be found <a href=”https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sql”>here</a>
 
+
+
 ### Executive Summary
 
 - The overall average approval rate is 68%
@@ -69,6 +71,8 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 | --- | --- | --- |
 | 78.89 | 8.4 | 21.59 |
 
+
+
 ### Other Insights
 
 - The overall average of approval rate is 68%  By Service Category most are within range of that average
@@ -82,14 +86,17 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 | Diabetes Supplies and Equip | 36967 | 66% |
 | Inpatient MH-SUD | 24232 | 66% |
 
+
 43% of the carriers were slower than the average standard response time as well as the expedited response time while 29% were slower than the extenuating average time
 | Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
 | --- | --- | --- |
 | 78.89 | 8.4 | 21.59 |
 <img width="1921" height="1171" alt="image" src="https://github.com/user-attachments/assets/489d7d3b-e69b-4600-a55d-7648cb4dca72" />
 
+
 - Over time, the average response times have improved overall between 2020 and 2023
 <img width="1463" height="969" alt="image" src="https://github.com/user-attachments/assets/60bb23f9-4e24-4b62-bd6b-ba33c59e41cb" />
+
 
 - Finally, the top 20 medications by number of PA requests have quite a few that are below the average approval rating
   | Drug_Name | Number of Requests | Average approval |
@@ -115,17 +122,22 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 | DULAGLUTIDE | 697 | 74% |
 | UBROGEPANT | 676 | 6% |
 
+
+
 ### **Recommendations**
 
 The following is a way to monitor medications to see if they fall below a specified approval rate.  In this example, the medications that are at or below the average of 59% show up on the list while those that fall at or below 30% are flagged.  This will allow providers and pharmacy to track which medications that may not be recommended for the patient and a consideration for alternate therapy.
+
 <img width="1217" height="1183" alt="image" src="https://github.com/user-attachments/assets/088ab229-7dce-4c47-a0fe-6ec72e89dab2" />
 
 For a full monitoring solution, the following dashboard will allow staff to track the overall approval rate for medications, the medications that fall at and below the average approval rate, as well as the response times per type of response and per carrier.
+
 <img width="2149" height="1200" alt="image" src="https://github.com/user-attachments/assets/f73353d0-0a17-4216-8173-92684c193f0c" />
 
 This dashboard will also allow the user to track all metrics per medication or per carrier just by clicking on the desired value
+
 <img width="2156" height="1196" alt="image" src="https://github.com/user-attachments/assets/05e84a7d-199a-4b48-8a60-0b895f398569" />
 
 
 
-The full Power BI Dashboard can be found <a href=”[https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sq](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix)l”>here</a>
+The full Power BI Dashboard can be found <a href=”[https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sq](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix”>here</a>
