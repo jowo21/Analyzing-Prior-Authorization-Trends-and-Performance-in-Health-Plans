@@ -54,6 +54,7 @@ The dataset consists of 20 columns and 7151 rows
 | Drug_code | string |
 | Drug_brand_names | string |
 
+
 The SQL code that was generated for analysis can be found <a href=”https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sql”>here</a>
 
 
