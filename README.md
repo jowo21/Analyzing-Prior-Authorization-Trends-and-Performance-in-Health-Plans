@@ -2,7 +2,7 @@
 
 ### **Analyzing Prior Authorization Trends and Performance in Health Plans**
 
-### Problem Statement
+
 
 Prior authorizations are critical processes in managed healthcare, designed to ensure medical necessity, cost control, and appropriate care delivery. However, it is often cited as a source of delay and administrative burden for providers and patients. Health plans must strike a balance between oversight and timely access to care, especially in cases requiring expedited responses or extenuating circumstances.
 
@@ -48,6 +48,7 @@ The dataset consists of 20 columns and 7151 rows
 | Drug_brand_names | string |
 
 The SQL code that was generated for analysis can be found <a href=”https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sql”>here</a>
+
 
 
 
@@ -99,7 +100,8 @@ The SQL code that was generated for analysis can be found <a href=”https://git
 
 
 - Finally, the top 20 medications by number of PA requests have quite a few that are below the average approval rating
-  | Drug_Name | Number of Requests | Average approval |
+  
+| Drug_Name | Number of Requests | Average approval |
 | --- | --- | --- |
 | SEMAGLUTIDE | 13534 | 37% |
 | TIRZEPATIDE | 3809 | 25% |
