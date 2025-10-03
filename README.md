@@ -153,6 +153,6 @@ This dashboard will also allow the user to track all metrics per medication or p
 
 
 
-The full Power BI Dashboard can be found [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sq](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix)
+The full Power BI Dashboard can be found [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix)
 
 
