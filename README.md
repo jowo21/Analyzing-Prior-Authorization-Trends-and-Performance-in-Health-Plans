@@ -91,9 +91,20 @@ The SQL code that was generated for analysis can be found [here](https://github.
 | 2022 | 69% |
 | 2023 | 68% |
 
+<br>
+
 - Outpatient MH-SUD had the highest approval rate among the service categories of 82%
+
+<br>
+
 - Prescription Drugs had the highest denied then approved average of 16%
+
+<br>
+  
 - 46% of the Services had 100% approval rates
+
+<br>
+
 - The following depicts the average response times of approvals
 
 | Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
