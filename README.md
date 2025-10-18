@@ -82,7 +82,7 @@ The SQL code that was generated for analysis can be found [here](https://github.
 ### Executive Summary
 
 - The overall average approval rate is 68%
-- Year over year approval ratings have not deviated much between 2020 and 2023
+- Year over year approval ratings have not deviated much from this average between 2020 and 2023 
 
 | Year | Average Approval Rate |
 | --- | --- |
