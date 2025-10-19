@@ -1,12 +1,30 @@
 
+USE prior_auth
+;
 
+
+SELECT *
+FROM hp_pa_table
+;
 
 #Service Categories with highest PA approval rates
 SELECT Service_category, SUM(Number_of_requests_per_code) AS total_requests, ROUND(AVG(Approval_rate),2) AS avg_approval_rate
 FROM hp_pa_table
 GROUP BY Service_category
-ORDER BY 2 DESC, 3 DESC
+ORDER BY  3 DESC
 ;
+
+
+
+
+#Checking prescriptoin drugs approval rate over the included years and counts of each
+SELECT Year_num, Service_category, ROUND(AVG(Approval_rate),2) AS avg_approval_rate, COUNT(*) AS count
+FROM hp_pa_table
+WHERE Service_category = "Prescription Drugs"
+GROUP BY Year_num
+;
+
+
 
 
 # Average denied then approved claims by service category
@@ -68,19 +86,18 @@ ORDER BY 2 ASC
 LIMIT 20
 ;
 
-#Categories with high expedited requests, their timings, and approval rates
-SELECT Service_category, SUM(Expedited_Number_of_requests) AS num_of_ex_requests, ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_avg_response, ROUND(AVG(Approval_rate),2) AS avg_approval_rate
+#Service categories, count of requests by type, average response times by type, and overall approval rates
+SELECT Service_category,
+SUM(Number_of_requests_per_code) AS standard_num_of_requests, ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_avg_response,
+SUM(Expedited_Number_of_requests) AS num_of_ex_requests, ROUND(AVG(Expedited_Avg_response_time_hrs),2) AS expedited_avg_response, 
+SUM(Extenuating_circumstances_Number_of_requests) AS num_of_exten_requests, ROUND(AVG(Extenuating_circumstances_Avg_response_time_hrs),2) AS extenuating_avg_response,
+ROUND(AVG(Approval_rate),2) AS avg_approval_rate
 FROM hp_pa_table
 GROUP BY Service_category
 ORDER BY 2 DESC
 ;
 
-#Categories with high normal requests, their timings, and approval rates
-SELECT Service_category, SUM(Number_of_requests_per_code) AS num_of_requests, ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_avg_response, ROUND(AVG(Approval_rate),2) AS avg_approval_rate
-FROM hp_pa_table
-GROUP BY Service_category
-ORDER BY 2 DESC
-;
+
 
 #Comparison of Standard and Extenuating
 SELECT SUM(Standard_Number_of_requests) AS num_standard, ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_avg_response, SUM(Extenuating_circumstances_Number_of_requests) AS num_extenuating , ROUND(AVG(Extenuating_circumstances_Avg_response_time_hrs),2) AS extenuating_avg_response
@@ -121,9 +138,32 @@ SELECT ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_average,
  FROM hp_pa_table
  ;
  
-#Percent of Services that had 100 % approval rates
-SELECT 
-(SELECT COUNT(Description_of_service) FROM hp_pa_table WHERE Approval_rate = 1) / COUNT(*) * 100 AS 100_percent_approval_rates
+
+ #Percent of Services that had 100 % approval rates
+  SELECT 
+  (SELECT COUNT(Description_of_service) FROM hp_pa_table WHERE Approval_rate = 1) / COUNT(*) * 100 AS 100_percent_approval_rates
+ FROM hp_pa_table
+  ;
+
+#Identifying  DME services
+SELECT Service_category, Description_of_service, COUNT(Description_of_service), ROUND(AVG(Approval_rate),2) AS avg_approval
 FROM hp_pa_table
+WHERE Service_category = "DME"
+GROUP BY Description_of_service
 ;
 
+
+SELECT Service_category, Description_of_service, COUNT(Description_of_service) AS service_count, ROUND(AVG(Approval_rate),2) AS avg_approval 
+FROM hp_pa_table
+WHERE Service_category = "DME"
+GROUP BY Description_of_service
+HAVING  ROUND(AVG(Approval_rate),2) < 0.68 
+;
+
+
+SELECT Service_category, Description_of_service,  ROUND(AVG(Approval_rate),2) AS avg_approval, ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_avg_response, ROUND(AVG(Expedited_Avg_response_time_hrs),2) AS expedited_avg_response, ROUND(AVG(Extenuating_circumstances_Avg_response_time_hrs),2) AS extenuating_avg_response
+FROM hp_pa_table
+WHERE Service_category = "DME"
+GROUP BY Description_of_service
+HAVING  ROUND(AVG(Approval_rate),2) < 0.68 
+;
