@@ -204,7 +204,9 @@ The second dashboard is used for DME products that fall below the 68% average ap
 
 Again, this allows the user to search the list for individual items and view their approval rate and the response times
 
-The Power BI dashboards can be downloaded and tried here
+The Power BI dashboards can be downloaded and tried [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20JUST%20DASHBOARDS.pbix)
+
+
 
 
 
