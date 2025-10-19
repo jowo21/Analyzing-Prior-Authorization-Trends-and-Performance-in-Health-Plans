@@ -13,7 +13,7 @@
 
 Prior authorizations are critical processes in managed healthcare, designed to ensure medical necessity, cost control, and appropriate care delivery. However, it is often cited as a source of delay and administrative burden for providers and patients. Health plans must strike a balance between oversight and timely access to care, especially in cases requiring expedited responses or extenuating circumstances.
 
-A pharmacy manager at a hospital wants to optimize medication selection by uncovering trends in the given PA data. This project aims to help the pharmacy manager to analyze prior authorization data across various carriers, service categories, and drug requests to identify patterns in approval rates, processing times, and factors influencing initially denied but eventually approved cases. 
+A medical director at a hospital wants to uncover inefficiencies across the entire prior authorization process and optimize medication selection by uncovering trends in the given PA data. This project aims to help the medical director to analyze prior authorization data across various carriers, service categories, and drug requests to identify patterns in approval rates, processing times, and factors influencing initially denied but eventually approved cases. 
 
 <br>
 <br>
@@ -81,28 +81,26 @@ The SQL code that was generated for analysis can be found [here](https://github.
 
 ### Executive Summary
 
-- The overall average approval rate is 68%
-- Year over year approval ratings have not deviated much from this average between 2020 and 2023 
+The overall average approval rate is 68%.  Monitoring processes that fall far below this average will be a key metric to observe
 
-| Year | Average Approval Rate |
-| --- | --- |
-| 2020 | 67% |
-| 2021 | 70% |
-| 2022 | 69% |
-| 2023 | 68% |
+<img width="1067" height="690" alt="image" src="https://github.com/user-attachments/assets/7398e1f4-57ce-4944-bbbf-56ad051ffd8a" />
+
+Since durable medical equipment (DME) and Prescription Drugs are far below the average approval rates, I focused on uncovering trends in these two areas.
 
 <br>
-
-- Outpatient MH-SUD had the highest approval rate among the service categories of 82%
-
 <br>
 
-- Prescription Drugs had the highest denied then approved average of 16%
+- Year over year approval ratings have not deviated much from this average between 2020 and 2023
+<img width="1955" height="535" alt="image" src="https://github.com/user-attachments/assets/8e7e7c23-f4bb-48b0-9a0f-976f0e02097d" />
 
 <br>
-  
-- 46% of the Services had 100% approval rates
+<br>
 
+DME saw an increase in approval rates year over year, but had a slight dip  in 2023. Prescription drugs were only recorded between 2022 and 2023, but showed no perceptible change between those years
+
+<img width="1942" height="544" alt="image" src="https://github.com/user-attachments/assets/c61bfcb0-1741-4cf4-85cb-4ac15e1d884d" />
+
+<br>
 <br>
 
 - The following depicts the average response times of approvals
@@ -114,21 +112,24 @@ The SQL code that was generated for analysis can be found [here](https://github.
 <br>
 <br>
 
+With this data uncovered, my recommendation to the medical director would be to track the DME products and Prescription Drugs that fall below the average approval rate of 68% as well as track the response times for the approvals of those items.  By using this method, there can be better planning and decision making when selecting these services.  Either the healthcare professional can communicate expected delays to their team or the patient and plan accordingly, or there can be a better selection of medication that may have a better chance to get approved or approved much faster.
+
 ---
 
 ### Other Insights
 
-- The overall average of approval rate is 68%  By Service Category most are within range of that average
+Although Prescription Drugs had the lowest overall approval rate of 59% it reflected the highest denied then approved average of 16%
 
-| Service_Category | Total_requests | Avg_approval_rate |
-| --- | --- | --- |
-| Outpatient Med-Surg | 1409804 | 65% |
-| Outpatient MH-SUD | 199548 | 82% |
-| DME | 155086 | 62% |
-| Inpatient Med-Surg | 115975 | 73% |
-| Prescription Drugs | 54909 | 59% |
-| Diabetes Supplies and Equip | 36967 | 66% |
-| Inpatient MH-SUD | 24232 | 66% |
+| Service Category | Average denied then approved percentage |
+| --- | --- |
+| Prescription Drugs | 16% |
+| Outpatient Med-Surg | 15% |
+| Inpatient Med-Surg | 9% |
+| DME | 8% |
+| Outpatient MH-SUD | 4% |
+| Inpatient MH-SUD | 3% |
+| Diabetes Supplies and Equip | 1% |
+
 
 <br>
 <br>
@@ -180,27 +181,32 @@ The SQL code that was generated for analysis can be found [here](https://github.
 
 ---
 
-### **Recommendations**
+### **Recommendations and Deliverables**
 
-The following is a way to monitor medications to see if they fall below a specified approval rate.  In this example, the medications that are at or below the average of 59% show up on the list while those that fall at or below 30% are flagged.  This will allow providers and pharmacy to track which medications that may not be recommended for the patient and a consideration for alternate therapy.
+<br>
 
-<img width="1217" height="1183" alt="image" src="https://github.com/user-attachments/assets/088ab229-7dce-4c47-a0fe-6ec72e89dab2" />
+To Identify the items that fall below the average approval rate, I created two different dashboards:
+
+<br>
+
+The first dashboard is to identify prescription medications that fall below the average approval rating of 68%.
+
+<img width="2063" height="1151" alt="image" src="https://github.com/user-attachments/assets/1d9a5a2a-d849-4536-a5d5-4d82710bd795" />
+
+The medications that fall to a set critical level of 30% are highlighted in red.  This dashboard allows the user to search for a medication by its NDC drug code or by the name of the medication to see if it is on the list.  This dashboard will also give the average response times in each category to help prepare for those delays should they come up.
 
 <br>
 <br>
 
-For a full monitoring solution, the following dashboard will allow staff to track the overall approval rate for medications, the medications that fall at and below the average approval rate, as well as the response times per type of response and per carrier.
+The second dashboard is used for DME products that fall below the 68% average approval rate
 
-<img width="2149" height="1200" alt="image" src="https://github.com/user-attachments/assets/f73353d0-0a17-4216-8173-92684c193f0c" />
+<img width="2044" height="1151" alt="image" src="https://github.com/user-attachments/assets/61303973-704f-4f6a-910d-039577041c42" />
 
-<br>
+Again, this allows the user to search the list for individual items and view their approval rate and the response times
 
-This dashboard will also allow the user to track all metrics per medication or per carrier just by clicking on the desired value
-
-<img width="2156" height="1196" alt="image" src="https://github.com/user-attachments/assets/05e84a7d-199a-4b48-8a60-0b895f398569" />
+The Power BI dashboards can be downloaded and tried here
 
 
 
-The full Power BI Dashboard can be found [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20worksheets.pbix)
 
 
