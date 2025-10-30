@@ -43,7 +43,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 ---
 
 
-### **Data Structure**
+### **Data Structure and SQL EDA**
 
 The dataset consists of 20 columns and 7151 rows
 
