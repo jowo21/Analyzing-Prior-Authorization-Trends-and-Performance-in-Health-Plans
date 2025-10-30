@@ -47,28 +47,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 
 The dataset consists of 20 columns and 7151 rows
 
-| Column | Type |
-| :------- | -------: |
-| Index_num | int |
-| Carrier | string |
-| Year_num | int |
-| Service_category | string |
-| Request |	string |
-| Code_type | string |
-| Code_num | string |
-| Description_of_service | string |
-| Number_of_requests_per_code | int |
-| Approval_rate | float |
-| Initially_denied_then_approved_approval_rate | float |
-| Expedited_Avg_response_time_hrs | float |
-| Standard_Avg_response_time_hrs | float |
-| Extenuating_circumstances_Avg_response_time_hrs | float |
-| Expedited_Number_of_requests | int |
-| Standard_Number_of_requests | int |
-| Extenuating_circumstances_Number_of_requests | int |
-| Drug_name |	string |
-| Drug_code | string |
-| Drug_brand_names | string |
+The dataset structure and datatypes can be found [here](https://github.com/jowo21/Analyzing-Prior-Authorization-Trends-and-Performance-in-Health-Plans/blob/main/about_dataset.md)
 
 
 The SQL code that was generated for analysis can be found [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth.sql)
