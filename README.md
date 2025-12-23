@@ -78,6 +78,10 @@ The SQL code that was generated for analysis can be found [here](https://github.
 
 - To operationalize these insights, two interactive Power BI dashboards were developed to enable clinicians and administrators to quickly identify **high-risk Prescriptions and DME items**, assess expected approval likelihood, and anticipate response times. These tools support proactive clinical decision-making, improved patient communication, and more efficient authorization workflows.
 
+<br>
+<br>
+<br>
+<br>
 
 ## Insights Deep Dive
 
@@ -171,6 +175,8 @@ There wasn’t much variation between Service Categories and Response times.  Bo
 | DULAGLUTIDE | 697 | 74% |
 | UBROGEPANT | 676 | 6% |
 
+<br>
+<br>
 <br>
 <br>
 
