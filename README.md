@@ -1,6 +1,6 @@
 
 
-### **Analyzing Prior Authorization Trends and Performance in Health Plans**
+# **Analyzing Prior Authorization Trends and Performance in Health Plans**
 
 
 
@@ -20,7 +20,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 
 ---
 
-### Key insights and recommendations are provided in the following areas: 
+## Key insights and recommendations are provided in the following areas: 
 
 - Prior authorization approval and denial rates based on various criteria
 - Response times for approvals
@@ -31,7 +31,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 
 ---
 
-### **Project Objectives**
+## **Project Objectives**
 
 - Perform a descriptive and comparative analysis of PA approval rates and response times.
 - Identify service categories and drugs that may benefit from streamlined or automated PA processes.
@@ -43,7 +43,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 ---
 
 
-### **Data Structure and SQL EDA**
+## **Data Structure and SQL EDA**
 
 The dataset consists of 20 columns and 7151 rows
 
@@ -58,23 +58,23 @@ The SQL code that was generated for analysis can be found [here](https://github.
 ---
 
 
-### Executive Summary
+## Executive Summary
 
-## Overview
+### Overview
 
 - This analysis evaluated prior authorization (PA) approval rates and response times across service categories from 2020–2023 to identify opportunities to reduce denials, delays, and administrative burden. Across all categories, the **overall average approval rate was 68%**, which serves as a meaningful performance benchmark for identifying underperforming services.
 
-## Approval Rate Analysis
+### Approval Rate Analysis
 
 - While approval rates remained relatively stable year over year, **Durable Medical Equipment (DME)** and **Prescription Drugs** consistently underperformed relative to the organizational average. DME showed gradual improvement over time, with a modest decline in 2023, while Prescription Drug, tracking beginning in 2022, demonstrated persistently lower approval rates with no meaningful year-over-year improvement.
 - Further analysis uncovered that **Prescription Drugs have the lowest overall approval rate (59%)** yet the **highest “denied then approved” rate (16%)**, signaling that a significant portion of denials are ultimately reversible. This represents avoidable delays, administrative effort, and patient care disruption.
 - A review of the **top 20 prescription medications by PA volume** highlighted several high-utilization drugs with **approval rates well below the 68% benchmark**, including weight management and stimulant medications. These drugs account for a disproportionate share of denials and follow-up activity, making them prime candidates for targeted intervention.
 
-## Response Time Findings
+### Response Time Findings
 
 - Response time analysis revealed that overall turnaround times have improved since 2020, indicating progress in operational efficiency. However, **43% of carriers exceeded average response times for both standard and expedited requests**, suggesting variability in payer performance remains a material contributor to delays. Notably, response times did not vary substantially by service category, indicating that **approval likelihood rather than processing speed, is the primary pain point for DME and Prescription Drugs**.
 
-## Initial Recommendations
+### Initial Recommendations
 
 - To operationalize these insights, two interactive Power BI dashboards were developed to enable clinicians and administrators to quickly identify **high-risk Prescriptions and DME items**, assess expected approval likelihood, and anticipate response times. These tools support proactive clinical decision-making, improved patient communication, and more efficient authorization workflows.
 
