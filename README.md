@@ -187,7 +187,9 @@ To help the medical director and other healthcare professionals Identify the ite
 The first dashboard is to identify prescription medications that fall below the average approval rating of 68%.
 
 <img width="2082" height="1151" alt="image" src="https://github.com/user-attachments/assets/31de17bf-5bc4-43ee-b02e-a5be80674b8e" />
-The medications that fall to a set critical level of 30% are highlighted in red.  This dashboard allows the user to search for a medication by its NDC drug code or by the name of the medication to see if it is on the list.  This dashboard will also give the average response times in each category to help prepare for those delays should they come up.
+
+The medications that fall to a set critical level of 30% are highlighted in red.  This dashboard allows the user to search for a medication by its NDC drug code or by the name of the medication to see if it is on the list.  
+This dashboard will also give the average response times in each category to help prepare for those delays should they come up.
 
 <br>
 
@@ -252,7 +254,6 @@ Improve approval consistency and planning for DME requests that fall below the o
 - Improved discharge planning and continuity of care.
 - Better alignment between clinical needs and payer expectations.
 
----
 
 ### 3. Reduce Delays Caused by “Denied Then Approved” Requests
 
@@ -272,11 +273,9 @@ Minimize delays in patient care by decreasing the volume of prescriptions that r
 - Reduced patient treatment interruptions.
 - More predictable care timelines for high-impact medications.
 
----
 
-### 
 
----
+
 
 ### 4. Set Expectations Using Data-Driven Response Time Benchmarks
 
