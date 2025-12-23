@@ -107,8 +107,11 @@ ORDER BY 1
 ;
 
 
-#Top 20 drugs per request and approval rates
-SELECT Drug_name, SUM(Number_of_requests_per_code) AS num_of_requests, ROUND(AVG(Approval_rate),2) AS avg_approval
+#Top 20 drugs per request and approval rates and response times
+SELECT Drug_name, SUM(Number_of_requests_per_code) AS num_of_requests, 
+ROUND(AVG(Approval_rate),2) AS avg_approval,  ROUND(AVG(Standard_Avg_response_time_hrs),2) AS standard_avg_response, 
+ROUND(AVG(Expedited_Avg_response_time_hrs),2) AS expedited_avg_response, 
+ROUND(AVG(Extenuating_circumstances_Avg_response_time_hrs),2) AS extenuating_avg_response
 FROM hp_pa_table
 GROUP BY Drug_name
 ORDER BY 2 DESC
@@ -160,13 +163,4 @@ FROM hp_pa_table
 WHERE Service_category = "DME"
 GROUP BY Description_of_service
 HAVING  ROUND(AVG(Approval_rate),2) < 0.68 
-;
-
-#SERVICE CATEGORIES AND RESPONSE TIMES
-SELECT Service_category, ROUND(AVG(Standard_Avg_response_time),2) AS standard_time, 
-ROUND(AVG(Extenuating_circumstances_Avg_response_time),2) AS extenuating_time,
-ROUND(AVG(Expedited_Avg_response_time),2) AS expeditied_time
-FROM hp_pa_table
-GROUP BY Service_category
-ORDER BY 2 DESC
 ;
