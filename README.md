@@ -60,128 +60,24 @@ The SQL code that was generated for analysis can be found [here](https://github.
 
 ### Executive Summary
 
-The overall average approval rate is 68%.  Monitoring processes that fall far below this average will be a key metric to observe
+### Overview
 
-<img width="1067" height="690" alt="image" src="https://github.com/user-attachments/assets/7398e1f4-57ce-4944-bbbf-56ad051ffd8a" />
+- This analysis evaluated prior authorization (PA) approval rates and response times across service categories from 2020–2023 to identify opportunities to reduce denials, delays, and administrative burden. Across all categories, the **overall average approval rate was 68%**, which serves as a meaningful performance benchmark for identifying underperforming services.
 
-Since durable medical equipment (DME) and Prescription Drugs are far below the average approval rates, I focused on uncovering trends in these two areas.
+### Approval Rate Analysis
 
-<br>
-<br>
+- While approval rates remained relatively stable year over year, **Durable Medical Equipment (DME)** and **Prescription Drugs** consistently underperformed relative to the organizational average. DME showed gradual improvement over time, with a modest decline in 2023, while Prescription Drug, tracking beginning in 2022, demonstrated persistently lower approval rates with no meaningful year-over-year improvement.
+- Further analysis uncovered that **Prescription Drugs have the lowest overall approval rate (59%)** yet the **highest “denied then approved” rate (16%)**, signaling that a significant portion of denials are ultimately reversible. This represents avoidable delays, administrative effort, and patient care disruption.
+- A review of the **top 20 prescription medications by PA volume** highlighted several high-utilization drugs with **approval rates well below the 68% benchmark**, including weight management and stimulant medications. These drugs account for a disproportionate share of denials and follow-up activity, making them prime candidates for targeted intervention.
 
-- Year over year approval ratings have not deviated much from this average between 2020 and 2023
-<img width="1955" height="535" alt="image" src="https://github.com/user-attachments/assets/8e7e7c23-f4bb-48b0-9a0f-976f0e02097d" />
+### Response Time Findings
 
-<br>
-<br>
+- Response time analysis revealed that overall turnaround times have improved since 2020, indicating progress in operational efficiency. However, **43% of carriers exceeded average response times for both standard and expedited requests**, suggesting variability in payer performance remains a material contributor to delays. Notably, response times did not vary substantially by service category, indicating that **approval likelihood rather than processing speed, is the primary pain point for DME and Prescription Drugs**.
 
-DME saw an increase in approval rates year over year, but had a slight dip  in 2023. Prescription drugs were only recorded between 2022 and 2023, but showed no perceptible change between those years
+### Initial Recommendations
 
-<img width="1942" height="544" alt="image" src="https://github.com/user-attachments/assets/c61bfcb0-1741-4cf4-85cb-4ac15e1d884d" />
+- To operationalize these insights, two interactive Power BI dashboards were developed to enable clinicians and administrators to quickly identify **high-risk Prescriptions and DME items**, assess expected approval likelihood, and anticipate response times. These tools support proactive clinical decision-making, improved patient communication, and more efficient authorization workflows.
 
-<br>
-<br>
-
-- The following depicts the average response times of approvals
-
-| Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
-| --- | --- | --- |
-| 78.89 | 8.4 | 21.59 |
-
-<br>
-<br>
-
-With this data uncovered, my recommendation to the medical director would be to track the DME products and Prescription Drugs that fall below the average approval rate of 68% as well as track the response times for the approvals of those items.  By using this method, there can be better planning and decision making when selecting these services.  Either the healthcare professional can communicate expected delays to their team or the patient and plan accordingly, or there can be a better selection of medication that may have a better chance to get approved or approved much faster.
-
----
-
-### Other Insights
-
-Although Prescription Drugs had the lowest overall approval rate of 59% it reflected the highest denied then approved average of 16%
-
-| Service Category | Average denied then approved percentage |
-| --- | --- |
-| Prescription Drugs | 16% |
-| Outpatient Med-Surg | 15% |
-| Inpatient Med-Surg | 9% |
-| DME | 8% |
-| Outpatient MH-SUD | 4% |
-| Inpatient MH-SUD | 3% |
-| Diabetes Supplies and Equip | 1% |
-
-
-<br>
-<br>
-
-43% of the carriers were slower than the average standard response time as well as the expedited response time while 29% were slower than the extenuating average time
-
-| Standard average response time in hours | Expedited average response time in hours | Extenuating average response time in hours |
-| --- | --- | --- |
-| 78.89 | 8.4 | 21.59 |
-<img width="1921" height="1171" alt="image" src="https://github.com/user-attachments/assets/489d7d3b-e69b-4600-a55d-7648cb4dca72" />
-
-<br>
-<br>
-
-
-- Over time, the average response times have improved overall between 2020 and 2023
-<img width="1463" height="969" alt="image" src="https://github.com/user-attachments/assets/60bb23f9-4e24-4b62-bd6b-ba33c59e41cb" />
-
-<br>
-<br>
-
-- Finally, the top 20 medications by number of PA requests have quite a few that are below the average approval rating
-  
-| Drug_Name | Number of Requests | Average approval |
-| --- | --- | --- |
-| SEMAGLUTIDE | 13534 | 37% |
-| TIRZEPATIDE | 3809 | 25% |
-| LISDEXAMFETAMINE DIMESYLATE | 3572 | 6% |
-| AMPHETAMINE/DEXTROAMPHETAMINE | 3054 | 7% |
-| EMPAGLIFLOZIN | 2118 | 76% |
-| ADALIMUMAB  ADALIMUMAB INJ KIT | 2035 | 79% |
-| DUPILUMAB | 1631 | 47% |
-| LIRAGLUTIDE | 1473 | 5% |
-| HYDROCODONE-ACETAMINOPHEN | 1452 | 58% |
-| METHYLPHENIDATE HCL | 1173 | 54% |
-| RIVAROXABAN | 1157 | 92% |
-| Rimegepant | 1076 | 56% |
-| cyclosporine | 1055 | 77% |
-| BUDESONIDE-FORMOTEROL | 1050 | 58% |
-| OXYCODONE HCL | 1029 | 6% |
-| SEMAGLUTIDE (WEIGHT MANAGEMENT) | 958 | 1% |
-| CYCLOSPORINE (OPHTH) | 952 | 75% |
-| Apixaban | 879 | 64% |
-| DULAGLUTIDE | 697 | 74% |
-| UBROGEPANT | 676 | 6% |
-
-<br>
-<br>
-
----
-
-### **Recommendations and Deliverables**
-
-<br>
-
-To Identify the items that fall below the average approval rate, I created two different dashboards:
-
-<br>
-
-The first dashboard is to identify prescription medications that fall below the average approval rating of 68%.
-
-<img width="2063" height="1151" alt="image" src="https://github.com/user-attachments/assets/1d9a5a2a-d849-4536-a5d5-4d82710bd795" />
-
-The medications that fall to a set critical level of 30% are highlighted in red.  This dashboard allows the user to search for a medication by its NDC drug code or by the name of the medication to see if it is on the list.  This dashboard will also give the average response times in each category to help prepare for those delays should they come up.
-
-<br>
-<br>
-
-The second dashboard is used for DME products that fall below the 68% average approval rate
-
-<img width="2044" height="1151" alt="image" src="https://github.com/user-attachments/assets/61303973-704f-4f6a-910d-039577041c42" />
-
-Again, this allows the user to search the list for individual items and view their approval rate and the response times
 
 The Power BI dashboards can be downloaded and tried [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20JUST%20DASHBOARDS.pbix)
 
