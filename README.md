@@ -214,7 +214,7 @@ Again, this allows the user to search the list for individual items and view the
 <br>
 
 
-The Power BI dashboards can be downloaded and tried [here](https://github.com/jowo21/Health_Plan_Prior_Authorizations_Analysis/blob/main/prior%20auth%20JUST%20DASHBOARDS.pbix)
+The Power BI dashboards can be downloaded and tried [here](https://github.com/jowo21/Analyzing-Prior-Authorization-Trends-and-Performance-in-Health-Plans/blob/main/prior%20auth%20worksheets%20all.pbix)
 
 <br>
 <br>
