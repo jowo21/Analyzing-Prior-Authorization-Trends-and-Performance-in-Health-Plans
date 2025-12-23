@@ -152,6 +152,7 @@ There wasn’t much variation between Service Categories and Response times.  Bo
 <br>
 
 - Finally, I identified the top 20 medications by number of PA requests which uncovered that an alarming 70% of the top 20 are below the average approval rate of 68%.  This is definitely an area that needs targeted improvement.
+
 | Drug_Name | Number of Requests | Average approval rate |
 | --- | --- | --- |
 | SEMAGLUTIDE | 13534 | 37% |
