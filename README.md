@@ -31,7 +31,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 
 ---
 
-## **Project Objectives**
+## **Objectives**
 
 - Perform a descriptive and comparative analysis of PA approval rates and response times.
 - Identify service categories and drugs that may benefit from streamlined or automated PA processes.
