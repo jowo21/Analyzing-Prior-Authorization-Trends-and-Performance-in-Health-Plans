@@ -5,7 +5,7 @@
 
 
 
-
+---
 
 
 
@@ -18,7 +18,7 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 <br>
 <br>
 
----
+
 
 
 
@@ -33,7 +33,6 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 <br>
 <br>
 
----
 
 
 ## **Data Structure and SQL EDA**
@@ -48,7 +47,7 @@ The SQL code that was generated for analysis can be found [here](https://github.
 <br>
 <br>
 
----
+
 
 
 ## Executive Summary
@@ -174,7 +173,7 @@ There wasn’t much variation between Service Categories and Response times.  Bo
 <br>
 <br>
 
-## Recommendations and Deliverables
+## **Recommendations and Deliverables**
 
 To help the medical director and other healthcare professionals Identify the items that fall below the average approval rate, I created two different dashboards:
 
