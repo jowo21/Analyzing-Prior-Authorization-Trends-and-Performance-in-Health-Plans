@@ -136,7 +136,7 @@ This insight further supports my recommendation to focus on improving the approv
 <br>
 <br>
 
-There wasn’t much variation between Service Categories and Response times.  Both DME and Prescription Drugs performed comparatively well against the other categories.  Prescription drugs expedited time was slightly higher than the average.  Outpatient Med-surge performed surprisingly well despite having an overwhelmingly large number of standard requests.
+There wasn’t much variation between Service Categories and Response times.  Both DME and Prescription Drugs performed comparatively well against the other categories.  Prescription drugs expedited time was slightly higher than the average.  Outpatient Med-surge performed surprisingly well despite having an overwhelmingly large number of standard requests.  I recommend further analysis into their methods or practices to facilitate their exceptional ratio to the other Service Categories.
 
 <img width="1959" height="943" alt="image" src="https://github.com/user-attachments/assets/53cb91f8-8d39-4ffe-9f34-449f2193882b" />
 
