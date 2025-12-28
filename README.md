@@ -85,20 +85,20 @@ The SQL code that was generated for analysis can be found [here](https://github.
 <br>
 <br>
 
-Year over year approval ratings have not deviated much from this average between 2020 and 2023 
+Year over year approval ratings have not deviated much from this average between 2020 and 2023.
 <img width="1941" height="523" alt="image" src="https://github.com/user-attachments/assets/34569b1c-683a-47b3-ac84-c6d4f4865d05" />
 
 <br>
 <br>
 
-DME saw an increase in approval rates year over year, but had a slight dip  in 2023. Prescription drugs were only recorded between 2022 and 2023, but showed no perceptible change between those years
+DME saw an increase in approval rates year over year, but had a slight dip  in 2023. Prescription drugs were only recorded between 2022 and 2023, but showed no perceptible change between those years.
 
 <img width="1951" height="543" alt="image" src="https://github.com/user-attachments/assets/232dcdcc-1991-42b6-a88c-b3f355554869" />
 
 <br>
 <br>
 
-Although Prescription Drugs had the lowest overall approval rate of 59% it reflected the highest denied then approved average of 16%
+Although Prescription Drugs had the lowest overall approval rate of 59% it reflected the highest denied then approved average of 16%.
 
 | Service Category | Average denied then approved percentage |
 | --- | --- |
