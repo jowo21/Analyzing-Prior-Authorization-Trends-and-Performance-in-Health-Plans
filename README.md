@@ -221,7 +221,7 @@ The Power BI dashboards can be downloaded and tried [here](https://github.com/jo
 
 Reduce avoidable denials and rework by increasing first-pass approval rates for high-volume, low-approval prescription medications.
 
-**Action:**
+**Actions:**
 
 - Use the prescription dashboard to identify medications with approval rates below 68%, prioritizing those below 30%.
 - Develop standardized PA checklists and clinical documentation templates for high-risk drugs
@@ -242,7 +242,7 @@ Reduce avoidable denials and rework by increasing first-pass approval rates for 
 
 Improve approval consistency and planning for DME requests that fall below the organizational approval benchmark.
 
-**Action:**
+**Actions:**
 
 - Use the DME dashboard to identify equipment types with approval rates below 68%.
 - Integrate approval likelihood and average response time into care planning and discharge workflows.
@@ -263,7 +263,7 @@ Improve approval consistency and planning for DME requests that fall below the o
 
 Minimize delays in patient care by decreasing the volume of prescriptions that require appeals or resubmissions.
 
-**Action:**
+**Actions:**
 
 - Focus process improvement efforts on Prescription Drugs, which exhibit the highest denied-then-approved rate (16%).
 - Analyze common approval gaps (e.g., missing step therapy documentation, dosage thresholds, diagnosis coding).
@@ -285,7 +285,7 @@ Minimize delays in patient care by decreasing the volume of prescriptions that r
 
 Improve communication and planning by aligning expectations around authorization turnaround times.
 
-**Action:**
+**Actions:**
 
 - Leverage response time metrics by service category and request type (standard, expedited, extenuating).
 - Use dashboard insights to inform patients and care teams when delays are likely.
