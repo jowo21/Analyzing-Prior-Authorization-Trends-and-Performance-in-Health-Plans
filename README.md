@@ -20,16 +20,9 @@ A medical director at a hospital wants to uncover inefficiencies across the enti
 
 ---
 
-## Key insights and recommendations are provided in the following areas: 
 
-- Prior authorization approval and denial rates based on various criteria
-- Response times for approvals
-- Trends of approval delays
 
-<br>
-<br>
 
----
 
 ## **Objectives**
 
