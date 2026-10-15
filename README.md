@@ -179,7 +179,9 @@ To help the medical director and other healthcare professionals Identify the ite
 
 The first dashboard is to identify prescription medications that fall below the average approval rating of 68%.
 
-<img width="2082" height="1151" alt="image" src="https://github.com/user-attachments/assets/31de17bf-5bc4-43ee-b02e-a5be80674b8e" />
+
+<img width="1800" height="983" alt="1" src="https://github.com/user-attachments/assets/1b0da1c8-e57b-404a-b84d-c10b3e1915f0" />
+
 
 The medications that fall to a set critical level of 30% are highlighted in red.  This dashboard allows the user to search for a medication by its NDC drug code or by the name of the medication to see if it is on the list.  
 This dashboard will also give the average response times in each category to help prepare for those delays should they come up.
@@ -187,20 +189,24 @@ This dashboard will also give the average response times in each category to hel
 <br>
 
 Selecting an individual item will allow the user to see the respective approval rate and the average response times:
-<img width="2065" height="1157" alt="image" src="https://github.com/user-attachments/assets/e0659933-e854-4a55-80ee-2db268adab6b" />
+
+<img width="1813" height="982" alt="2" src="https://github.com/user-attachments/assets/f76603e2-2ccd-46c7-b79f-34aad25eab8d" />
+
 
 <br>
 <br>
 
 The second dashboard is used to identify DME products that fall below the 68% average approval rate and the respective response times.
 
-<img width="2086" height="1140" alt="image" src="https://github.com/user-attachments/assets/537052a8-86be-4310-bad0-97763036e31c" />
+<img width="1810" height="993" alt="3" src="https://github.com/user-attachments/assets/a012c124-4701-4fea-8af6-640aafb57e49" />
+
 
 <br>
 
 Again, this allows the user to search the list for individual items and view their approval rate and the response times.  Selecting an item will give that specific approval rate and response times:
 
-<img width="2074" height="1154" alt="image" src="https://github.com/user-attachments/assets/72564738-249f-468b-96f0-9260cd9f6ce3" />
+<img width="1815" height="993" alt="4" src="https://github.com/user-attachments/assets/d23342ac-dde2-47b5-b500-d0a6a18fa9a1" />
+
 
 <br>
 <br>
